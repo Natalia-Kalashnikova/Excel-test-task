@@ -15,8 +15,8 @@ body {
   box-sizing: border-box;
 
   background-image: image-set(
-    url('/images/BG-mobil@1x.png') 1x type('image/png'),
-    url('/images/BG-mobil@2x.png') 2x type('image/png')
+    url('../images/BG-mobil@1x.png') 1x type('image/png'),
+    url('../images/BG-mobil@2x.png') 2x type('image/png')
   );
   background-size: 360px;
   background-position: top;
@@ -26,8 +26,8 @@ body {
 @media screen and (min-width: 768px) {
   body {
     background-image: image-set(
-      url('/images/BG-tablet@1x.png') 1x type('image/png'),
-      url('/images/BG-tablet@2x.png') 2x type('image/png')
+      url('../images/BG-tablet@1x.png') 1x type('image/png'),
+      url('../images/BG-tablet@2x.png') 2x type('image/png')
     );
     background-size: 768px;
   }
@@ -36,8 +36,8 @@ body {
 @media screen and (min-width: 1440px) {
   body {
     background-image: image-set(
-      url('/images/BG-desktop@1x.png') 1x type('image/png'),
-      url('/images/BG-desktop@2x.png') 2x type('image/png')
+      url('../images/BG-desktop@1x.png') 1x type('image/png'),
+      url('../images/BG-desktop@2x.png') 2x type('image/png')
     );
   }
 }
