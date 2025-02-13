@@ -340,7 +340,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #010101;
 }
 
 @media screen and (min-width: 1440px) {
@@ -381,7 +380,6 @@ p {
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
-  color: #010101;
 }
 
 @media screen and (min-width: 1440px) {
@@ -427,10 +425,6 @@ p {
     font-size: 32px;
     line-height: 1.12;
   }
-}
-
-.timer-num {
-  color: #010101;
 }
 
 .timer-num-second {
@@ -750,13 +744,12 @@ p {
   padding: 10px 20px;
 
   font-size: 20px;
+  font-weight: 400;
 
   color: white;
 
-  background: green;
   border-radius: 5px;
 
-  transform: translateX(-50%);
   transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
 

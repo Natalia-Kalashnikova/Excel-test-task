@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     notification.textContent = message;
-    notification.style.background = isSuccess ? 'green' : 'red';
+    notification.style.background = isSuccess ? '#3a8a5f' : 'rgb(217, 90, 90)';
     notification.classList.add('show');
 
     setTimeout(() => {
@@ -97,22 +97,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('https://example.com/register', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
+      // const response = await fetch('https://example.com/register', {
+      //   method: 'POST',
+      //   mode: 'no-cors',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(data),
+      // });
 
-      if (!response.ok) throw new Error('Registration error');
+      // if (!response.ok) throw new Error('Registration error');
 
+      // Simulating a successful request
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      // =========================================
       showNotification('Registration successful!', true);
+      
       form.reset();
 
       // Reset input and checkbox styles after successful submission
       form
         .querySelectorAll('.form-input')
         .forEach(input => input.classList.remove('valid', 'error'));
+      
       const checkbox = form.querySelector('.form-checkbox');
       if (checkbox) {
         checkbox.classList.remove('error');
@@ -120,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (form.classList.contains('registration-form-modal')) {
-        toggleModal();
+        toggleModal(); // Closing modal after successful submission
       }
     } catch (error) {
       showNotification(error.message, false);
