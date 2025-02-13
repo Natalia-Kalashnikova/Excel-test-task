@@ -740,22 +740,16 @@ p {
   border: 1px solid red;
 }
 
-.error-message {
-  display: none;
-  margin-top: 5px;
-
-  font-size: 12px;
-  color: red;
-}
-
 .notification {
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  bottom: 20px;
-  left: 50%;
+  top: 10px;
+  right: 10px;
 
   padding: 10px 20px;
+
+  font-size: 20px;
 
   color: white;
 
