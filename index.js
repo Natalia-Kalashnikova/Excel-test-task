@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const checkbox = form.querySelector('.form-checkbox');
       if (checkbox) {
-        checkbox.classList.remove('error');
-        checkbox.nextElementSibling.style.border = '1px solid #8e8f99';
+        checkbox.classList.remove('error');        
+        checkbox.nextElementSibling.style.border = 'none';
       }
 
       if (form.classList.contains('registration-form-modal')) {
