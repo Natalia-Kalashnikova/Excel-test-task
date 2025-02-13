@@ -579,7 +579,8 @@ p {
   }
 }
 
-#user-tel {
+#user-tel,
+#user-tel-modal {
   padding-left: 48px; /* Indentation for text so it doesn't overlap with the icon */
 }
 
