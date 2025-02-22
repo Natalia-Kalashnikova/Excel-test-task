@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const checkboxIcon = checkbox.nextElementSibling;
       if (!checkbox.checked) {
         checkbox.classList.add('error');
-        checkboxIcon.style.border = '2px solid red';
+        checkboxIcon.style.border = '1px solid red';
         valid = false;
       } else {
         checkbox.classList.remove('error');
@@ -98,8 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       // const response = await fetch('https://example.com/register', {
-      //   method: 'POST',
-      //   mode: 'no-cors',
+      //   method: 'POST',       
       //   headers: { 'Content-Type': 'application/json' },
       //   body: JSON.stringify(data),
       // });
