@@ -19,32 +19,39 @@ body {
 
   background-color: #f5f5f5;
 
-  background-image: image-set(
-    url('../images/BG-mobil@1x.png') 1x type('image/png'),
-    url('../images/BG-mobil@2x.png') 2x type('image/png')
-  );
-  background-size: 360px;
+  background-image: url('../images/BG-mobil_1x.webp');
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    background-image: url('../images/BG-mobil_2x.webp');
+  }
+}
+
 @media screen and (min-width: 768px) {
   body {
-    background-image: image-set(
-      url('../images/BG-tablet@1x.png') 1x type('image/png'),
-      url('../images/BG-tablet@2x.png') 2x type('image/png')
-    );
-    background-size: 768px;
+    background-image: url('../images/BG-tablet_1x.webp');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      background-image: url('../images/BG-tablet_2x.webp');
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
   body {
-    background-image: image-set(
-      url('../images/BG-desktop@1x.png') 1x type('image/png'),
-      url('../images/BG-desktop@2x.png') 2x type('image/png')
-    );
-    background-size: 1440px;
+    background-image: url('../images/BG-desktop_1x.webp');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      background-image: url('../images/BG-desktop_2x.webp');
+    }
   }
 }
 
