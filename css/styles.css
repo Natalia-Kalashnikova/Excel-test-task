@@ -131,6 +131,10 @@ p {
   }
 }
 
+.header-container {
+  width: 360px;
+}
+
 .logo-block {
   display: block;
   width: max-content;
