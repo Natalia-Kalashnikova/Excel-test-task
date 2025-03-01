@@ -241,14 +241,13 @@ p {
 }
 
 .start {
-  width: 188px;
+  width: fit-content;
   height: 30px;
   margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
   .start {
-    width: 230px;
     height: 40px;
   }
 }
