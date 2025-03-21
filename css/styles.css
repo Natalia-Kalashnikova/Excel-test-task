@@ -593,7 +593,8 @@ p {
 }
 
 .form-input:focus {
-  border-color: #247f4e;
+  /* border-color: #247f4e; */
+  border-color: #767b8e;
 }
 
 .form-input:focus + .form-icon {
@@ -648,7 +649,8 @@ p {
   margin-right: 8px;
   flex-shrink: 0;
 
-  border: 1px solid #0f7c41;
+  /* border: 1px solid #0f7c41; */
+  border: 1px solid #767b8e;
   border-radius: 2px;
   cursor: pointer;
 
@@ -746,6 +748,10 @@ p {
 /* Errors and notification */
 .error {
   border: 1px solid red;
+}
+
+.valid {
+  border: 1px solid #247f4e;
 }
 
 .notification {

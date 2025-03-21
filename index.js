@@ -70,14 +70,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Validate checkbox
     if (checkbox) {
-      const checkboxIcon = checkbox.nextElementSibling;
+      const checkboxIcon = checkbox.closest('.agreement').querySelector('.checkbox-icon');
+      
       if (!checkbox.checked) {
         checkbox.classList.add('error');
         checkboxIcon.style.border = '1px solid red';
         valid = false;
       } else {
         checkbox.classList.remove('error');
-        checkboxIcon.style.border = 'none';
+        checkboxIcon.style.border = '1px solid #247f4e';
       }
     }
 
@@ -121,7 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const checkbox = form.querySelector('.form-checkbox');
       if (checkbox) {
         checkbox.classList.remove('error');        
-        checkbox.nextElementSibling.style.border = 'none';
+        const checkboxIcon = checkbox.closest('.agreement').querySelector('.checkbox-icon');
+        checkboxIcon.style.border = '1px solid #247f4e';
       }
 
       if (form.classList.contains('registration-form-modal')) {
@@ -154,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         checkboxIcon.style.border = 'none';
       } else {
         checkbox.classList.add('error');
-        checkboxIcon.style.border = '2px solid red';
+        checkboxIcon.style.border = 'none';
       }
     });
   });
@@ -172,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let timer;
 
   (() => {
-    const compareDate = new Date(2025, 2, 20, 0, 0).getTime();
+    const compareDate = new Date(2025, 4, 1, 0, 0).getTime();
 
     // Function to update the countdown timer
     function updateTimer(prefix) {
