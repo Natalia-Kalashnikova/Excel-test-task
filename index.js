@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let timer;
 
   (() => {
-    const compareDate = new Date(2025, 4, 1, 0, 0).getTime();
+    const compareDate = new Date(2025, 10, 7, 0, 0).getTime();
 
     // Function to update the countdown timer
     function updateTimer(prefix) {
